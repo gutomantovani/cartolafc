@@ -1,13 +1,13 @@
 package core;
 
-import entity.RoundInfo;
-import service.RoundService;
+import entity.Team;
+import service.TeamService;
 
 public class Main {
 
 	public static void main(String[] args) {
-		RoundService service = new RoundService();
-		RoundInfo[] team = service.list();
+		TeamService service = new TeamService();
+		Team team = service.get("sep-guto-mantovani");
 
 		System.out.println("Feito");
 	}

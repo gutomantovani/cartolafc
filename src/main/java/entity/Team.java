@@ -9,7 +9,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 public class Team {
 
 	@JsonProperty("time")
-	private TeamInfo time;
+	private TeamInfo teamInfo;
 
 	@JsonProperty("patrimonio")
 	private Double patrimony;
@@ -29,12 +29,12 @@ public class Team {
 	@JsonProperty("clubes")
 	private HashMap<String, Club> clubs;
 
-	public TeamInfo getTime() {
-		return time;
+	public TeamInfo getTeamInfo() {
+		return teamInfo;
 	}
 
-	public void setTime(TeamInfo time) {
-		this.time = time;
+	public void setTeamInfo(TeamInfo teamInfo) {
+		this.teamInfo = teamInfo;
 	}
 
 	public Double getPatrimony() {
